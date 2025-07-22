@@ -1,200 +1,335 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutriPlan - A Personalized Diet Planner</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Nutri<span>Plan</span></div>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Meal Plans</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#" class="btn">Sign Up</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    <section class="hero">
-        <div class="container">
-            <h1>Your Personalized Diet Plan</h1>
-            <p>Get customized meal plans tailored to your goals, preferences, and lifestyle. Achieve your health objectives with science-backed nutrition.</p>
-            <a href="#" class="btn">Get Started</a>
-        </div>
-    </section>
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
 
-   
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">Why Choose NutriPlan</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🍎</div>
-                    <h3>Personalized Plans</h3>
-                    <p>Our algorithm creates meal plans based on your dietary preferences, allergies, and health goals.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚖️</div>
-                    <h3>Weight Management</h3>
-                    <p>Whether you want to lose, gain, or maintain weight, we've got the perfect plan for you.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Easy Tracking</h3>
-                    <p>Track your meals, macros, and progress with our user-friendly mobile app.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    
-    <section class="meal-plans">
-        <div class="container">
-            <h2 class="section-title">Popular Meal Plans</h2>
-            <div class="plans-grid">
-                <div class="plan-card">
-                    <div class="plan-image" style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
-                    <div class="plan-content">
-                        <h3>Weight Loss</h3>
-                        <ul>
-                            <li>Calorie-controlled meals</li>
-                            <li>High protein options</li>
-                            <li>Nutrient-dense foods</li>
-                            <li>7-day meal plan</li>
-                        </ul>
-                        <a href="#" class="btn">View Plan</a>
-                    </div>
-                </div>
-                <div class="plan-card">
-                    <div class="plan-image" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-                    <div class="plan-content">
-                        <h3>Muscle Gain</h3>
-                        <ul>
-                            <li>High-protein meals</li>
-                            <li>Calorie surplus options</li>
-                            <li>Post-workout nutrition</li>
-                            <li>14-day meal plan</li>
-                        </ul>
-                        <a href="#" class="btn">View Plan</a>
-                    </div>
-                </div>
-                <div class="plan-card">
-                    <div class="plan-image" style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
-                    <div class="plan-content">
-                        <h3>Plant-Based</h3>
-                        <ul>
-                            <li>100% vegan options</li>
-                            <li>Protein-rich plant foods</li>
-                            <li>Varied micronutrients</li>
-                            <li>7-day meal plan</li>
-                        </ul>
-                        <a href="#" class="btn">View Plan</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Success Stories</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"NutriPlan helped me lose 25 pounds in 3 months without feeling deprived. The meal plans are delicious and easy to follow!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/women/32.jpg');"></div>
-                        <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Lost 25 lbs</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"As a busy professional, I never had time to meal plan. NutriPlan saved me hours each week while helping me reach my fitness goals."</p>
-                    <div class="testimonial-author">
-                        <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/men/45.jpg');"></div>
-                        <div class="author-info">
-                            <h4>Michael Chen</h4>
-                            <p>Gained 15 lbs muscle</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"The plant-based meal plans are incredible! I've never eaten such varied and tasty meals while sticking to my vegan diet."</p>
-                    <div class="testimonial-author">
-                        <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/women/68.jpg');"></div>
-                        <div class="author-info">
-                            <h4>Emily Rodriguez</h4>
-                            <p>Vegan for 2 years</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-    
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Transform Your Eating Habits?</h2>
-            <p>Join thousands of happy users who have achieved their health goals with our personalized meal plans.</p>
-            <a href="#" class="btn">Start Your Journey Today</a>
-        </div>
-    </section>
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-   
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>NutriPlan</h3>
-                    <p>Your personalized nutrition guide to a healthier lifestyle.</p>
-                    <div class="social-links">
-                        <a href="#">FB</a>
-                        <a href="#">IG</a>
-                        <a href="#">TW</a>
-                        <a href="#">YT</a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Recipes</a></li>
-                        <li><a href="#">Nutrition Guides</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="#">support@nutriplan.com</a></li>
-                        <li><a href="#">+9876543210</a></li>
-                        <li><a href="#">Feedback</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 NutriPlan. All rights reserved.</p>
-            </div> 
-        </div>
-    </footer>
-</body>
-</html>
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #FFD700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6c200;
+}
+
+
+.hero {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(rgba(76, 175, 80, 0.8), rgba(76, 175, 80, 0.8)), url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+
+.features {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 50px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+
+.meal-plans {
+    padding: 80px 0;
+    background-color: #f0f8f0;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.plan-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.plan-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.plan-content {
+    padding: 30px;
+}
+
+.plan-content h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #4CAF50;
+}
+
+.plan-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.plan-content ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-content ul li:last-child {
+    border-bottom: none;
+}
+
+
+.testimonials {
+    padding: 80px 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.author-info h4 {
+    margin-bottom: 5px;
+}
+
+.author-info p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+.cta {
+    padding: 80px 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+.cta .btn {
+    background-color: white;
+    color: #4CAF50;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+.cta .btn:hover {
+    background-color: #f0f0f0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #bbb;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
